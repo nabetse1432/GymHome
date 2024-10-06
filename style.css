@@ -255,7 +255,7 @@ p{
     }
     .box, .box1 {
         flex-direction: column;
-        width: 450px;
+        width: 300px;
     }
 
     .art1 {
