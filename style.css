@@ -260,7 +260,7 @@ p{
 
     .art1 {
         flex-direction: column;
-        width: 750px;
+        width: 100px;
     }
 }
 
@@ -286,7 +286,7 @@ p{
 
     .art1 {
         flex-direction: column;
-        width: 100px;
+        width: 200px;
     }
 }
 
