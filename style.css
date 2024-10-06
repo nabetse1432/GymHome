@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+body{
+    margin:0;
+    padding: 0;
+    background-image: url("IMG/hoja.png");
+    box-sizing: border-box;
+    background-size: cover;
+    font-family: Bungee;
+}
+
+h1{
+    color: rgb(31, 150, 210);
+    font-size: 27px;
+    margin: 0;
+}
+h3{
+    color: rgb(215, 212, 27);
+}
+.content{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 0 5rem;
+    border: 2px solid white;
+}
+nav{
+    display: flex;
+    animation: slidein 1.7s ease-in-out 0s 1;
+}
+.content .vinv{
+    display: flex;
+    flex-direction: row;
+    width: 80px;
+    text-decoration: none;
+    color: white;
+    margin: 0 1.5rem;
+    font-size: 13.7px;
+    transition: 0.4s ease;
+    border-radius: 5px;
+}
+.vinv:hover{
+    background:rgb(20, 206, 206); 
+    width: 100px;
+    font-size: 15px;
+}
+.box{
+    width: 80%;
+    height: 320px;
+    display: flex;
+    margin: 15px auto 5px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.box1{
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    margin: 5px auto 5px;
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    
+}
+.t1{
+    color: rgb(31, 150, 210);
+}
+.art{
+    width: 70%;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    
+    
+}
+.art1{
+    width: 900px;
+    height: 300px;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box2{
+    width: 450px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+.ima1 img{
+    width: 450px;
+    height: 290px;
+    border-radius: 10px;
+}
+#join{
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 100px;
+    font-family: Bungee;
+    background: transparent;
+    color: white;
+    display: flex;
+    align-self: flex-start;
+    justify-content: flex-end;
+    /* margin-top: 150px; */
+}
+#join:active{
+    background: white;
+    color: black;
+}
+.btn{
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 100px;
+    font-family: Bungee;
+    background: transparent;
+    color: white;
+}
+.btn:active{
+    background: white;
+    color: black;
+}
+.a1{
+    animation: aflip 0.7s ease-in 0s 1;
+}
+.a2{
+    animation: aflip 1.5s ease-in 0s 1;
+}
+.a3{
+    animation: aflip 2.3s ease-in 0s 1;
+}
+p{
+    color: white;
+    margin: 0;
+}
+.pa1{
+    margin-bottom:10px ;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 600px;
+    height: 400px;
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;  
+    gap: 10px;
+    border-radius: 10px;
+    animation: bounce 3s ease-in-out 0s 1;
+}
+.reg{
+    margin: 30px;
+   color: rgb(31, 150, 210);
+}
+ input{
+    width: 250px;
+    height:20px;
+    border: none;
+    border-radius: 5px;
+    font-family: Bungee;
+}
+#enviar{
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 250px;
+    height: 20px;
+    font-family: Bungee;
+    text-align: center;
+    color: white;
+    background: transparent;
+    margin-top: 20px;
+}
+#enviar:active{
+    border: 2px solid white;
+    color: black;
+    background: white ;
+}
+.foo{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    padding: 0 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
+    backdrop-filter: blur(10px);
+    border: 2px solid white;
+    
+}
+
+.foo p{
+    margin-right:50px ;
+}
+.insta{
+    width: 30px;
+    height: 30px;
+    margin:3px ;
+}
+@keyframes slidein{
+    0%{
+        transform: translateY(-500px);
+        transform: rotateY(45deg);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        transform: rotateY(0);
+        opacity: 1;
+    }
+}
+@keyframes aflip{
+    from{
+        transform: rotateY(180deg);
+    }
+    to{
+        transform: rotateY(0);
+    }
+}
+@keyframes bounce{
+    0%{
+        transform: translateX(-1000px);
+    }
+    50%{
+        transform: translateX(1200px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@media (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+        min-height: 1000px; /* Asegura que el body siempre tenga al menos la altura del viewport */
+        background-image: url("IMG/hoja.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: Bungee;
+    }
+    .content{
+        width: 100%;
+        padding: 0 2rem;
+    }
+    .box, .box1 {
+        flex-direction: column;
+        width: 500px;
+    }
+
+    .art1 {
+        flex-direction: column;
+        width: 100px;
+    }
+}
+
+
+/* Estilos para pantallas de hasta 768px */
+@media (max-width: 768px) {
+    body {
+        background-image: url("IMG/hoja.png");
+        background-size: cover;
+    }
+    .art1, .box, .box1 {
+        flex-direction: column;
+    }
+}
+
+/* Estilos para pantallas de hasta 1024px */
+@media (max-width: 1024px) {
+    body {
+        background-image: url("IMG/hoja.png");
+        background-size: cover;
+    }
+}
